@@ -7,7 +7,7 @@ const getSocket = () => useContext(SocketContext);
 
 const SocketProvider = ({children}) => {
     const socket = useMemo(
-        () => io(process.env.VITE_SERVER, {withCredentials: true}),
+        () => io(process.env.BACKEND, {withCredentials: true}),
         []
     );
 
