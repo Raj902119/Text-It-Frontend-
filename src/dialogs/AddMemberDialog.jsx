@@ -22,7 +22,6 @@ const AddMemberDialog = ({ chatId }) => {
 
   const { isLoading, data, isError, error } = useMyFriendsQuery(chatId);
 
-  console.log(data);
   const [addMember, isLoadingaddMember] = useAsyncMutation(
     useAddGroupMemberMutation
   );

@@ -38,7 +38,6 @@ const AppLayout = () => (WrappedComponent) => {
     const { user } = useSelector((state) => state.auth);
     const { newMessagesAlert } = useSelector((state) => state.chat);
 
-    console.log("Raj message",newMessagesAlert);
 
     const {isLoading,data,isError,error,refetch} = useMyChatsQuery("");
 

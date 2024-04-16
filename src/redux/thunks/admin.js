@@ -32,7 +32,6 @@ const getAdmin = createAsyncThunk("admin/getAdmin", async () =>
             {withCredentials: true},
         );
         return data.admin;
-        console.log(data.admin);
     } catch (error) {
         throw error.response.data.message;
     }
@@ -46,7 +45,6 @@ const adminLogout = createAsyncThunk("admin/logout", async () =>
             {withCredentials: true},
         );
         return data.message;
-        console.log(data.message);
     } catch (error) {
         throw error.response.data.message;
     }

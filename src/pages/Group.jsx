@@ -107,7 +107,6 @@ const Group = () => {
     removeMember("RemoveMember...",{chatId,userId});
   };
 
-  console.log(members);
   useEffect(()=>{
     if(chatId){
     setgroupName(`Group Name ${chatId}`);
@@ -330,7 +329,6 @@ const GroupList = ({w="100%",myGroups=[],chatId}) => {
 
 const GroupListItem = memo(({group, chatId})=>{
   const {name, avatar, _id} = group;
-  console.log();
   return (
     <Link to={`?group=${_id}`} onClick={e=>{if(chatId===_id) e.preventDefault()}}>
       <Stack direction={"row"} spacing={"1rem"} alignItems={"center"}>

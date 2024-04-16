@@ -25,7 +25,6 @@ const AdminLogin = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        console.log("submit");
         dispatch(adminLogin(secretKey.value));
     }
 

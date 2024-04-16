@@ -49,7 +49,6 @@ const NewGroupDialog = () => {
     setSelectedMembers((prev) =>(prev.includes(id) ? prev.filter((curr)=>curr !== id) : [...prev,id]));
   };
 
-  console.log(data);
 
   const submitHandler = () => {
     if(!groupName.value) return toast.error("Group name is required");

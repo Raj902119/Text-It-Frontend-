@@ -34,7 +34,6 @@ const useAsyncMutation = (mutationHook) => {
               });
             }
           } catch (error) {
-            console.log(error);
             toast.error("Something went wrong",{id: toastId});
           } finally {
             setIsLoading(false);

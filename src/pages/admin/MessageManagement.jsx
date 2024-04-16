@@ -86,7 +86,6 @@ const MessageManagement = () => {
       error: error,
     },
   ]);
-  console.log(data);
 
     const [rows, setRows] = useState([]);
     useEffect(() => {

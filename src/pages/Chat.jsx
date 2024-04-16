@@ -122,13 +122,11 @@ const Chat = ({chatId, user}) => {
 
   const startTypingListener = useCallback((data) => {
     if(data.chatId !== chatId) return;
-    console.log("typing", data);
     setuserTyping(true);
   }, [chatId]);
   
   const stopTypingListener = useCallback((data) => {
     if(data.chatId !== chatId) return;
-    console.log("typing", data);
     setuserTyping(false);
   }, [chatId]);
 
