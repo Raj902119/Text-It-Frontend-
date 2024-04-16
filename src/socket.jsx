@@ -7,7 +7,7 @@ const getSocket = () => useContext(SocketContext);
 
 const SocketProvider = ({children}) => {
     const socket = useMemo(
-        () => io("http://localhost:3000", {withCredentials: true}),
+        () => io(process.env.VITE_SERVER, {withCredentials: true}),
         []
     );
 
