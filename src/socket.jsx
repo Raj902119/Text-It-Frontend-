@@ -3,6 +3,7 @@ import io from "socket.io-client";
 import { server } from "./constants/config";
 
 const SocketContext = createContext();
+console.log(server);
 
 const getSocket = () => useContext(SocketContext);
 
