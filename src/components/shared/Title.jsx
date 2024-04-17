@@ -1,7 +1,7 @@
 import React from 'react'
 import {Helmet} from 'react-helmet-async'
 
-const Title = ({title="Chat App",discription="This is chat App"}) => {
+const Title = ({title="TextIt",discription="This is chat App"}) => {
   return (
     <Helmet>
         <title>{title}</title>
